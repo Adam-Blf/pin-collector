@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pin Collector Launcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Pin Collector • Launcher</h1>
+    <p class="tag">Petit panneau qui t’aide à lancer le projet en 2 commandes</p>
+
+    <section class="card">
+      <h2>1. Installer les dépendances</h2>
+      <p>Ouvre un terminal dans le dossier du projet <code>pin-collector</code> puis colle la commande ci dessous.</p>
+      <pre id="cmd-install"><code>pip install -r requirements.txt</code></pre>
+      <button data-copy="#cmd-install">Copier</button>
+    </section>
+
+    <section class="card">
+      <h2>2. Lancer l’app</h2>
+      <p>Une fois les dépendances installées, lance l’interface.</p>
+      <pre id="cmd-run"><code>streamlit run streamlit_app.py</code></pre>
+      <button data-copy="#cmd-run">Copier</button>
+    </section>
+
+    <section class="card">
+      <h2>Scripts prêts à l’emploi</h2>
+      <p>Tu peux aussi utiliser un script si tu préfères.</p>
+      <ul class="links">
+        <li><a href="./start_windows.bat" download>start_windows.bat</a> pour Windows</li>
+        <li><a href="./setup_and_run.ps1" download>setup_and_run.ps1</a> pour PowerShell</li>
+        <li><a href="./start_unix.sh" download>start_unix.sh</a> pour macOS et Linux</li>
+      </ul>
+      <p class="note">Les scripts supposent que tu es dans le dossier <code>pin-collector</code>.</p>
+    </section>
+
+    <section class="card tips">
+      <h2>Conseils rapides</h2>
+      <ul>
+        <li>Si <code>pip</code> ne marche pas, essaie <code>python -m pip</code>.</li>
+        <li>Si <code>streamlit</code> n’est pas reconnu, ferme et rouvre le terminal.</li>
+        <li>Tu peux créer un venv si tu veux garder l’environnement propre.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
