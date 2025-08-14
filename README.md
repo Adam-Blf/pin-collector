@@ -1,29 +1,25 @@
-# Pin Collector • projet data simple et clean
+# Pin Collector • mon petit projet data qui fait le taf
 
-Un petit projet pour recenser ma collection de pins avec une interface visuelle.
-Objectif: j’édite ma base tranquille, je filtre, j’importe depuis Excel, j’exporte vers Excel. Rien de compliqué. Juste utile.
+Je veux recenser mes pins sans prise de tête. Une interface claire, des filtres, et surtout je peux importer et exporter en Excel. C’est tout. Le reste est bonus.
 
 ## Ce que ça fait
 - Table éditable en direct
-- Import d’un fichier Excel
-- Export de la table au format Excel
-- Recherche, filtres rapides, tris
-- Champs clés: nom, série, collection, quantité, état, échange, prix, tags, notes, image_url
+- Import Excel et export Excel
+- Filtres simples — recherche, série, collection, échange oui non
 - Sauvegarde locale possible dans `data/pins.xlsx`
+- Champs conseillés: name, serie, collection, quantity, state, tradeable, price, tags, notes, image_url
 
-## Lancer le projet
-1. Crée un venv si tu veux
-2. Installe les deps  
+## Lancer en 3 lignes
 ```bash
 pip install -r requirements.txt
-```
-3. Lance l’app  
-```bash
 streamlit run streamlit_app.py
+# l’app s’ouvre dans le navigateur
 ```
 
-## Format du fichier Excel attendu
-Colonnes recommandées:
+Si tu préfères être guidé, ouvre `launcher/index.html` — il y a les boutons copier et des scripts prêts pour Windows PowerShell macOS Linux.
+
+## Format Excel
+Tu viens avec ton `.xlsx`. L’app aligne les colonnes manquantes et garde les colonnes en plus. Colonnes de base:
 - name
 - serie
 - collection
@@ -35,18 +31,29 @@ Colonnes recommandées:
 - notes
 - image_url
 
-Tu peux ajouter d’autres colonnes. L’app ne casse pas, elle les garde.
+Un exemple est dispo: `data/sample_pins.xlsx`
 
-## Fichiers
-- `streamlit_app.py` l’app
-- `data/sample_pins.xlsx` un exemple prêt à charger
-- `requirements.txt` dépendances
-- `.gitignore` propre
+## Structure rapide
+```
+pin-collector/
+  ├─ streamlit_app.py
+  ├─ requirements.txt
+  ├─ data/
+  │  └─ sample_pins.xlsx
+  └─ launcher/
+     ├─ index.html
+     ├─ style.css
+     ├─ app.js
+     ├─ start_windows.bat
+     ├─ setup_and_run.ps1
+     └─ start_unix.sh
+```
 
 ## Roadmap perso
-- Images en miniatures
-- Export CSV en plus de Excel
-- Multi collections
-- Mode sombre custom
+- miniatures pour les images
+- export CSV
+- multi collections
+- thème custom
 
-Si tu veux contribuer, fais un fork et ouvre une PR.
+## Licence
+MIT. Fais en bon usage.
