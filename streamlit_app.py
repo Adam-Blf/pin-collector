@@ -14,7 +14,6 @@ DATA_PATH = Path("data/pins.xlsx")
 
 st.set_page_config(page_title=APP_TITLE, page_icon="📍", layout="wide")
 st.title(APP_TITLE)
-st.caption("Interface simple pour gérer ma collection de pins")
 
 # Sidebar
 with st.sidebar:
@@ -146,4 +145,4 @@ if save_local:
     st.success("Sauvegardé dans data/pins.xlsx")
 
 st.markdown("---")
-st.caption("Fait simple et efficace.")
+st.caption("Par Adam Beloucif")
