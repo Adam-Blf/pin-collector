@@ -1,6 +1,6 @@
 @echo off
 REM === Aller dans le dossier du projet ===
-cd /d "C:\Users\PC1\Downloads\pin-collector"
+cd /d "%~dp0.."
 
 REM === Créer un venv s'il n'existe pas ===
 if not exist ".venv" (
