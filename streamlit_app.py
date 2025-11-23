@@ -184,12 +184,83 @@ else:
     # CSS
     st.markdown("""
         <style>
-        .pin-card { border:1px solid #e5e7eb; border-radius:16px; padding:12px; margin-bottom:20px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.06);}
-        .pin-card img { width:100%; border-radius:12px; display:block; object-fit:cover; }
-        .pin-info { text-align:left; padding:8px 4px 4px 4px; }
-        .pin-title { font-weight:600; font-size:1.05rem; margin:8px 0 6px 0; }
-        .pin-meta { margin:2px 0; font-size:0.95rem; }
-        .pin-actions { display:flex; gap:8px; margin-top:8px; }
+        /* Global Styles */
+        .stApp {
+            background-color: #0e1117;
+        }
+        
+        /* Card Styles */
+        .pin-card { 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 16px; 
+            padding: 16px; 
+            margin-bottom: 24px; 
+            background: #1e2329; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .pin-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            border-color: #ff4b4b;
+        }
+
+        .pin-card img { 
+            width: 100%; 
+            height: 200px;
+            border-radius: 12px; 
+            display: block; 
+            object-fit: cover; 
+            background-color: #262730;
+        }
+        
+        .pin-info { 
+            text-align: left; 
+            padding: 12px 4px 4px 4px; 
+            color: #fafafa;
+        }
+        
+        .pin-title { 
+            font-weight: 700; 
+            font-size: 1.1rem; 
+            margin: 12px 0 8px 0; 
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .pin-meta { 
+            margin: 4px 0; 
+            font-size: 0.9rem; 
+            color: #b0b0b0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .pin-badge {
+            background: #262730;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            border: 1px solid #333;
+        }
+        
+        .pin-actions { 
+            display: flex; 
+            gap: 8px; 
+            margin-top: 12px; 
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Button overrides */
+        .stButton button {
+            border-radius: 8px;
+            font-weight: 600;
+        }
         </style>
     """, unsafe_allow_html=True)
 
