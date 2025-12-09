@@ -1,3 +1,11 @@
+Dernier commit: 23/11/2025 | Langage principal: Python | Nombre de langages: 15
+
+Construit avec les outils et technologies : 
+Python, C++, Cython, C, Fortran, PowerShell, JavaScript, Smarty, Meson, HTML, Batchfile, CMake, Jinja, CSS, Shell
+
+🇫🇷 Français | 🇬🇧 Anglais | 🇪🇸 Espagnol | 🇮🇹 Italien | 🇵🇹 Portugais | 🇷🇺 Russe | 🇩🇪 Allemand | 🇹🇷 Turc
+
+
 # Pin Collector / Collecteur de Pins
 
 [🇫🇷 Version Française](#version-française) | [🇬🇧 English Version](#english-version)
