@@ -1,10 +1,9 @@
-Dernier commit: 23/11/2025 | Langage principal: Python | Nombre de langages: 15
+![Dernier commit](https://img.shields.io/badge/Dernier%20commit-09/12/2025-brightgreen) ![Langage principal](https://img.shields.io/badge/Langage%20principal-Python-blue) ![Nombre de langages](https://img.shields.io/badge/Nombre%20de%20langages-15-orange)
 
-Construit avec les outils et technologies : 
-Python, C++, Cython, C, Fortran, PowerShell, JavaScript, Smarty, Meson, HTML, Batchfile, CMake, Jinja, CSS, Shell
+### Construit avec les outils et technologies : 
+![Python](https://img.shields.io/badge/-Python-lightgrey) ![C++](https://img.shields.io/badge/-C%2B%2B-lightgrey) ![Cython](https://img.shields.io/badge/-Cython-lightgrey) ![C](https://img.shields.io/badge/-C-lightgrey) ![Fortran](https://img.shields.io/badge/-Fortran-lightgrey) ![PowerShell](https://img.shields.io/badge/-PowerShell-lightgrey) ![JavaScript](https://img.shields.io/badge/-JavaScript-lightgrey) ![Smarty](https://img.shields.io/badge/-Smarty-lightgrey) ![Meson](https://img.shields.io/badge/-Meson-lightgrey) ![HTML](https://img.shields.io/badge/-HTML-lightgrey) ![Batchfile](https://img.shields.io/badge/-Batchfile-lightgrey) ![CMake](https://img.shields.io/badge/-CMake-lightgrey) ![Jinja](https://img.shields.io/badge/-Jinja-lightgrey) ![CSS](https://img.shields.io/badge/-CSS-lightgrey) ![Shell](https://img.shields.io/badge/-Shell-lightgrey)
 
 🇫🇷 Français | 🇬🇧 Anglais | 🇪🇸 Espagnol | 🇮🇹 Italien | 🇵🇹 Portugais | 🇷🇺 Russe | 🇩🇪 Allemand | 🇹🇷 Turc
-
 
 # Pin Collector / Collecteur de Pins
 
