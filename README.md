@@ -432,3 +432,9 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 **Developed with ❤️ for pin collectors everywhere**
 
 For issues or feature requests, open an issue on [GitHub](https://github.com/Adam-Blf/pin-collector).
+
+---
+
+<p align="center">
+  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a></sub>
+</p>
