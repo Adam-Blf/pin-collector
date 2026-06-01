@@ -13,6 +13,23 @@
 
 Gestionnaire de collections de pins (Streamlit) · catalogage, filtrage, import/export Excel, vues carte et tableau.
 
+## Architecture
+
+```mermaid
+flowchart TB
+    USER["Utilisateur<br/>navigateur · localhost:8501"]
+    APP["streamlit_app.py<br/>UI · vue carte · vue tableau · filtres"]
+    HELPERS["Helpers<br/>ensure_columns · sanitize_urls · coercion types"]
+    EXCEL["data/pins.xlsx<br/>persistance locale · pandas + openpyxl"]
+    IO["Import / Export<br/>upload .xlsx · download .xlsx"]
+    RENDER["Render<br/>deploiement web · render.yaml"]
+
+    USER --> APP --> HELPERS --> EXCEL
+    APP --> IO
+    IO --> EXCEL
+    RENDER -.heberge.-> APP
+```
+
 ---
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adambeloucif/) ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Adam-Blf.pin-collector)
