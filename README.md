@@ -11,18 +11,18 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
 ![Render](https://img.shields.io/badge/deploy-Render-46E3B7?logo=render&logoColor=white)
 
-Gestionnaire de collections de pins (Streamlit) · catalogage, filtrage, import/export Excel, vues carte et tableau.
+Gestionnaire de collections de pins (Streamlit) - catalogage, filtrage, import/export Excel, vues carte et tableau.
 
 ## Architecture
 
 ```mermaid
 flowchart TB
-    USER["Utilisateur<br/>navigateur · localhost:8501"]
-    APP["streamlit_app.py<br/>UI · vue carte · vue tableau · filtres"]
-    HELPERS["Helpers<br/>ensure_columns · sanitize_urls · coercion types"]
-    EXCEL["data/pins.xlsx<br/>persistance locale · pandas + openpyxl"]
-    IO["Import / Export<br/>upload .xlsx · download .xlsx"]
-    RENDER["Render<br/>deploiement web · render.yaml"]
+    USER["Utilisateur<br/>navigateur - localhost:8501"]
+    APP["streamlit_app.py<br/>UI - vue carte - vue tableau - filtres"]
+    HELPERS["Helpers<br/>ensure_columns - sanitize_urls - coercion types"]
+    EXCEL["data/pins.xlsx<br/>persistance locale - pandas + openpyxl"]
+    IO["Import / Export<br/>upload .xlsx - download .xlsx"]
+    RENDER["Render<br/>deploiement web - render.yaml"]
 
     USER --> APP --> HELPERS --> EXCEL
     APP --> IO
@@ -470,7 +470,7 @@ For issues or feature requests, open an issue on [GitHub](https://github.com/Ada
 ---
 
 <p align="center">
-  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a> · <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
+  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> - Data Engineer & Fullstack Developer - <a href="https://github.com/Adam-Blf">GitHub</a> - <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
 </p>
 
 
